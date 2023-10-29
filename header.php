@@ -4,6 +4,7 @@
     <title>Cinema Booking System</title>
     <link rel="stylesheet" href="style.css">
   </head>
+  
   <body> 
     <!-- Header -->
     <div class="wrapper header">
