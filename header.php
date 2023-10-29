@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Cinema Booking System</title>
-    <link rel="stylesheet" href="../cinema/admin.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body> 
     <!-- Header -->
