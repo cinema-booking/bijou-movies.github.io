@@ -1,0 +1,121 @@
+@media (max-width: 768px) {
+    .header {
+        padding: 0 1rem;
+    }
+    
+    .header-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #1e293b;
+        flex-direction: column;
+        gap: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.4s ease;
+        z-index: 99;
+    }
+    
+    .header-links.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .header-links li {
+        width: 100%;
+    }
+    
+    .header-links li a {
+        padding: 1rem;
+        border-radius: 0;
+        border-bottom: 1px solid #334155;
+    }
+    
+    .collapse-menu {
+        display: flex;
+        width: 30px;
+        height: 24px;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    
+    .collapse-menu span {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+    
+    .collapse-menu.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-6px, 8px);
+    }
+    
+    .collapse-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .collapse-menu.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-6px, -8px);
+    }
+    
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .description {
+        padding: 2rem 1rem;
+    }
+    
+    .description h1 {
+        font-size: 2rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .movie-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .carousel-nav {
+        display: none;
+    }
+    
+    .popup-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .popup-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .description h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .movie-card {
+        min-width: 160px;
+    }
+    
+    .movie-poster {
+        height: 220px;
+        font-size: 2rem;
+    }
+}
