@@ -1,112 +1,322 @@
-<!--header link><!-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-</script>
-<script> 
-$(function(){
-  $("#header").load("header.html");
-});
-</script> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bijou Movies - Home</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<div id="header"></div>
+  <nav>
+    <div class="header">
+      <div class="header-logo">
+        <h1>BIJOU MOVIES</h1>
+      </div>
+
+      <ul class="header-links">
+        <li><a href="index.html" class="active"><i class="fas fa-home"></i><span>Home</span></a></li>
+        <li><a href="book.html"><i class="fas fa-ticket-alt"></i><span>Book Tickets</span></a></li>
+        <li><a href="#"><i class="fas fa-info-circle"></i> <span>About</span></a></li>
+        <li><a href="login.html"><i class="fas fa-user"></i> <span>Login / Register</span></a></li>
+      </ul>
+
+      <div class="collapse-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- <button class="menu-toggle">
+  <span>Menu</span>
+</button> -->
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <section class="description">
+      <h1>Welcome to Bijou Movies</h1>
+      <p>Experience the magic of cinema with our curated selection of the latest blockbusters and timeless classics. Book your tickets now for an unforgettable movie experience.</p>
+      <a href="book.html" class="cta-button">Book Now</a>
+    </section>
+
+    <section class="search">
+      <input type="text" class="search-input" placeholder="Search for movies...">
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+    </section>
+
+    <section class="featured-movies">
+      <h2 class="section-title">Featured Movies</h2>
+      <div class="movie-slides">
+
+        <div class="movie-card"  data-movie-id="1">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+
+        <div class="movie-card"  data-movie-id="2">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div>  
+
+        <div class="movie-card"  data-movie-id="3">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div>  
+
+        <div class="movie-card"  data-movie-id="4">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+        
+        <div class="movie-card"  data-movie-id="5">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+
+        <div class="movie-card"  data-movie-id="6">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+
+        <div class="movie-card"  data-movie-id="7">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+
+        <div class="movie-card"  data-movie-id="8">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+
+        <div class="movie-card"  data-movie-id="9">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+        <!-- Navigation Arrows Inside Carousel Container -->
+      <div class="carousel-nav">
+        <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      </div>
+    </section>
+
+    <section class="now-showing">
+      <h2 class="section-title">Now Showing</h2>
+      <div class="movie-grid">
+
+        <div class="movie-card" data-movie-id="10">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+
+        <div class="movie-card" data-movie-id="11">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div>  
+
+        <div class="movie-card" data-movie-id="12">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+        
+        <div class="movie-card" data-movie-id="13">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+
+        <div class="movie-card" data-movie-id="14">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+
+        <div class="movie-card" data-movie-id="15">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+
+        <div class="movie-card" data-movie-id="16">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+
+        <div class="movie-card" data-movie-id="17">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+
+        <div class="movie-card" data-movie-id="18">
+          <div class="movie-poster"><i class="fas fa-film"></i></div>
+          <div class="movie-info">
+              <div class="movie-title">Titanic</div>
+              <div class="movie-details">
+                <span>PG-13</span>
+                <span>2h 15m</span>
+              </div>
+            </div>
+        </div> 
+      </div>
+    </section>
+  </main>
+
+  <!-- Movie Popup -->
+  <div class="movie-popup" id="moviePopup">
+    <div class="popup-content">
+      <button class="close-popup" id="closePopup"><i class="fas fa-times"></i></button>
+      <div class="popup-poster"><i class="fas fa-film"></i></div>
+      <h2 class="popup-title" id="popupTitle">Movie Title</h2>
+      <div class="popup-details" id="popupDetails">
+        <span id="popupRating">PG-13</span>
+        <span id="popupDuration">2h 15m</span>
+        <span id="popupGenre">Action, Interesting</span>
+      </div>
+      <p class="popup-description" id="popupDescription">
+        Movie description will appear here. This is a detailed description of the movie plot, cast, and other relevant information.
+      </p>
+      <div class="popup-buttons">
+        <button class="popup-btn"><i class="fas fa-ticket-alt"></i> Book Tickets</button>
+        <button class="popup-btn"><i class="fas fa-film"></i> Watch Trailer</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Telephone: +44 000 000 000</p>
+        <p>Email: <a href="mailto:info@bijou.co.uk">info@bijou.co.uk</a></p>
+      </div>
+
+
+      <div class="social-links">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+
+      <div class="newsletter">
+        <h3>Stay Updated</h3>
+        <form class="subscription">
+          <input type="email" placeholder="Your email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © 2025 Bijou Movies. All Rights Reserved</p>
+    </div>
+
+  </footer>
 </body>
-  <!-- Movies -->
-    <!-- Section 1 -->
-  <h2 style="text-align: center;">Movies S1</h2>
-  <div class="wrapper body">
-    <div class="carousel">
-      <div class="carousel__item carousel__item--visible">
-        <img src="img1.jpg" />
-      </div>
-      <div class="carousel__item">
-        <img src="img2.jpg" />
-      </div>
-      <div class="carousel__item">
-        <img src="img3.jpg" />
-      </div>
-      <div class="carousel__item">
-        <img src="img4.jpg" />
-      </div>
-      <div class="carousel__actions">
-        <button id="carousel__button--prev" aria-label="Previous slide"><</button>
-        <button id="carousel__button--next" aria-label="Next slide">></button>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-
-    <!-- Section 2 -->
-  <h2 style="text-align: center;">Movies S2</h2>
-  <div class="wrapper body">S2</div>
-
-  <h2>MOVIES</h2> 
-  <div class="box">
-    <!-- Movie 1 -->
-    <div class="boxes">
-      <h3>Barbie</h3> 
-
-      <div class="box images">
-        <img src="https://i5.walmartimages.com/asr/143a3439-e628-4422-8f09-6b4ce9d13940.adda536ad0dcf341e48ebcf2e6047977.jpeg" alt="Barbie">
-      </div>
-      <p>Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
-
-    </div> 
-
-    <!-- Movie 2 -->
-    <div class="boxes">
-      <h3>Oppenheimer</h3> 
-
-      <div class="box images">
-        <img src="https://s.yimg.com/ny/api/res/1.2/KKboR0XzIj7bG56Yp172vg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM5OQ--/https://media.zenfs.com/en/total_film_411/9b59e1c250da8db045de7dcb5c5a97be" alt="Oppenheimer">
-      </div>
-
-      <p>During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world's first nuclear explosion, forever changing the course of history.</p>
-    </div>
-
-    <!-- Movie 3 -->
-    <div class="boxes">
-      <h3>The Meg 2</h3> 
-
-      <div class="box images">
-        <img src="https://facinema.com/wp-content/uploads/2023/05/Meg-2-The-Trench-Poster-1.jpg" alt="The Meg 2">
-      </div>
-
-      <p>Jonas Taylor leads a research team on an exploratory dive into the deepest depths of the ocean. Their voyage spirals into chaos when a malevolent mining operation threatens their mission and forces them into a high-stakes battle for survival. Pitted against colossal, prehistoric sharks and relentless environmental plunderers, they must outrun, outsmart and outswim their merciless predators.
-</p>
-    </div> 
-
-    <!-- Movie 4 -->
-    <div class="boxes">
-      <h3>Joy Ride</h3>
-
-      <div class="box images">
-        <img src="https://dx35vtwkllhj9.cloudfront.net/lionsgateus/joy-ride/images/regions/us/share.jpg" alt="Joy Ride">
-      </div>
-
-      <p>When Audrey's business trip to Asia goes sideways, she enlists the help of Lolo, her childhood best friend, Kat, a college friend, and Deadeye, Lolo's eccentric cousin. Their epic, no-holds-barred experience becomes a journey of bonding, friendship, belonging and wild debauchery that reveals the universal truth of what it means to know and love who you are.</p>
-    </div>
-
-    <div class="clearfix"></div>
-  </div>
-
-  <!--footer link><!-->
-  <head>
-  <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous">
-  </script>
-  <script> 
-  $(function(){
-    $("#footer").load("footer.html");
-  });
-  </script> 
-  </head>
-  <body>
-  <div id="footer"></div>
-  </body>
+</html>
